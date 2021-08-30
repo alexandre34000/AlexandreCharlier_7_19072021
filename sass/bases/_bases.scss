@@ -1,0 +1,39 @@
+/**
+* _bases.scss 1.0 juillet 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier__19072021.
+* GitHub Pages : https://alexandre34000.github.io/AlexandreCharlier_7_19072021
+* Theme Name : Les petits plats .
+* Date: juillet 2021. 
+* Description : StyleSheet de la base.
+*/
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+   box-sizing: inherit; 
+   border:0;
+}
+html{
+    font-size:62.5%;
+    @include mobile-landscape{
+        font-size:75%;
+    }
+    min-width : 350px;
+  //  min-width: map-get($breakpoints, htmlMin);
+}
+
+body {
+    box-sizing: border-box;
+    margin:0;
+}
+ul, li{ list-style: none;}
+
+a {
+    text-decoration: none;
+    color: black;
+  }

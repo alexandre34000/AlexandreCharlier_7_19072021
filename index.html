@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="plats recettes ingredients ustensils" />
+    <meta name="description" content="solution pour trouver facilement des recettes "/>
+    <meta name="author" content="Alexandre CHARLIER " />
+    <title>Les petits plats, choisissez et selectionner de nombreuses et savoureuses recettes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Lato&display=swap" />
+    <link rel="icon" type="image/svg+xml" href="./dist/pictures/logo/logo.png" sizes="392x68" />
+    <link rel="stylesheet" href="./dist/css/home-style.css" />
+</head>
+
+<body>
+    <header aria-label=" Ensemble de champs et buttons pour des recherches par mots clés">
+        <div id="container-entete">
+            <div id="content-entete">
+                <h1 id="entete-logo">
+                    <img id="logo-img" src="dist/pictures/logo/logo.png" alt="une toque rouge au dessus de la phrase Les petits plats qui représente le logo" width="268"
+                        height="93"/>
+                </h1>
+                <div id="primary-search">
+                    <input id="primary-search__input"
+                        placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette"/>
+                    <label id="primary-search__label" for="primary-search__input"></label>
+                </div>  
+                <ul id="selected-tags" aria-label="Ensemble de tags selectionné">
+                    
+                </ul>
+                <div id="secondary-search" aria-label=" Ensemble de champs remplissables avec bouton pour visualisation">
+                    <div class="secondary-search__label" aria-label="section recherche par ingrédients" >
+                        <div class="label-header blue" data-open="false" id="filter-ingredients" data-name="Ingrédients">
+                            <input class="label-input" id="ingrédient" name="ingredient" type="search" placeholder="Ingrédients" maxlength="15" />
+                            <button class="label-btn" id="btn-ingredient" aria-expanded="false" aria-label="ouvrir le menu des ingredients"></button>
+                        </div>
+                        <ul class="label-content blue" id="details-first"  >
+                        
+                        </ul>
+                    </div>
+                    <div class="secondary-search__label" aria-label="section recherche par appareils" >
+                        <div class="label-header green" data-open="false"  id="filter-appareils" data-name="Appareils" >
+                            <input class="label-input" id="appareil" name="appareil" type="search" placeholder="Appareils" maxlength="15" />
+                            <button class="label-btn" id="btn-appareil" aria-expanded="false" aria-label="ouvrir le menu des appareils"></button>
+                        </div>
+                        <ul class="label-content green" id="details-second">
+        
+                        </ul>
+                    </div>
+                    <div class="secondary-search__label" aria-label="section recherche par ustensils" >
+                        <div class="label-header orange" data-open="false"  id="filter-ustensils" data-name="Ustensils">
+                            <input class="label-input" id="ustensil" name="ustensil" type="search" placeholder="Ustensils" maxlength="15"/>
+                            <button class="label-btn" id="btn-ustensil"aria-expanded="false" aria-label="ouvrir le menu des ustensils"></button>
+                        </div>
+                        <ul class="label-content orange" id="details-third" data-content="false">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main aria-label=" affichage de plusieurs recettes">
+        <div id="container-main">
+            <div id="content-main" >
+            
+            </div>
+        </div>
+    </main>
+    <footer id="footer" aria-label="Ensemble de liens pour nous contacter">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h2 class="footer-title">
+              <img class="footer-title__logo" src="./dist/pictures/logo/logo.png" 
+                alt="les petits plats" width="150" height="50" title="Fisheye" />
+            </h2>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a class="item-nav" href="#">Proposer des menus</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="item-nav" href="#">Devenir partenaire</a>
+              </li>
+              <li class="footer-list__item item3">
+                <a class="item-nav" href="#">Mentions légales</a>
+              </li>
+              <li class="footer-list__item item4">
+                <a class="item-nav" href="mailto:alexandre.charlier@free.fr">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

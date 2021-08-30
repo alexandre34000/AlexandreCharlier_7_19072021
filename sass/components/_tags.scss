@@ -1,0 +1,41 @@
+/**
+* _tags.scss 1.0 juillet 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier__19072021.
+* GitHub Pages : https://alexandre34000.github.io/AlexandreCharlier_7_19072021
+* Theme Name : Les petits plats .
+* Date: juillet 2021. 
+* Description : StyleSheet des tags.
+*/
+
+.tags {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 37px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  
+}
+.tags-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.tags-label {
+  height:37px;
+  font-size: $font-sm;
+  font-weight: 400;
+  color: $secondary-text;
+  padding: 8px 40px 0 15px;
+  font-family: $font-texte;
+  cursor: pointer;
+}
+.tags-label::after {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  content: url('../pictures/icons/cross.png');
+}

@@ -1,0 +1,47 @@
+/**
+* _fonts.scss 1.0 avril 2021 by Alexandre CHARLIER  
+* 
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier__19072021.
+* GitHub Pages : https://alexandre34000.github.io/AlexandreCharlier_7_19072021
+* Theme Name : Les petits plats .
+* Date: juillet 2021. 
+* Description : StyleSheet des fonts.
+*/
+
+h1 {
+  font-family: $font-texte, sans-serif;
+}
+
+h2,
+h3,
+h4,
+p,
+span,
+a {
+  font-family: $font-texte, sans-serif;
+}
+li {
+  font-family: $font-texte, sans-serif;
+  font-size: $font-md;
+}
+
+h1,
+h2 {
+  font-size: $font-exlg;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: $font-md;
+  font-weight: 900;
+}
+h4 {
+  font-size: $font-sm;
+  font-weight: 500;
+}
+p,
+span,
+a {
+  font-size: $font-sm;
+}
