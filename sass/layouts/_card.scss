@@ -1,0 +1,102 @@
+/**
+* _card.scss 1.0 juillet 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier__19072021.
+* GitHub Pages : https://alexandre34000.github.io/AlexandreCharlier_7_19072021
+* Theme Name : Les petits plats .
+* Date: juillet 2021. 
+* Description : StyleSheet des cards du main.
+*/
+
+.card {
+  max-width: 380px;
+  min-height: 400px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background-color: $primary-background-card;
+}
+
+.card-header {
+  width: 100%;
+  height: 178px;
+  background-color: $secondary-background-card;
+}
+.card-main {
+  width: 100%;
+  min-height: 186px;
+  //background-color: $primary-background-card;
+  padding: 0 18px 0 20px;
+}
+.card-title {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 30px 60px;
+  padding: 20px 0 20px 0;
+}
+.card-title__h2 {
+  display: inline-block;
+  font-size: $font-md;
+  font-weight: 400;
+}
+
+.card-title__icon {
+  content: url('../pictures/icons/Vector.png');
+}
+.card-title__time {
+  font-size: $font-md;
+  font-weight: 800;
+}
+
+.card-describe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-describe__ingredients {
+  width: 45%;
+ min-height: 150px;
+  @include mobileIp {
+    width: 50%;
+  }
+ white-space:wrap; 
+}
+.card-describe__ingredients-list {
+  padding: 0;
+  margin: 0;
+  font-size: $font-exsm;
+  color: $primary-text;
+  & :nth-child(1) {
+    font-weight: 800;
+  }
+}
+
+.card-describe__recette {
+  width: 45%;
+  height: 109px;
+  overflow: hidden;
+  line-height: $font-exsm;
+ 
+  font-family: $font-recette;
+  @include mobileIp {
+    width: 45%;
+  }
+}
+.overflow {
+  position: relative;
+  max-height: calc($font-exsm * 8);
+  overflow: hidden;
+  padding-right: $font-exsm;
+}
+.overflow::before {
+  position: absolute;
+  font-size: 20px;
+  content: "...";
+  bottom: 0;
+  right: 3px;
+}
+
+.card-describe__recette-text {
+  font-family: $font-recette;
+  line-height: $font-exsm;
+}

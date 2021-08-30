@@ -1,0 +1,115 @@
+/**
+* _secondary-search.scss 1.0 juillet 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier__19072021.
+* GitHub Pages : https://alexandre34000.github.io/AlexandreCharlier_7_19072021
+* Theme Name : Les petits plats .
+* Date: juillet 2021. 
+* Description : StyleSheet for template of secondary search items.
+*/
+
+.secondary-search__label {
+  display: flex;
+  flex-direction: column;
+  min-height: 69px;
+  min-width: 240px;
+  margin: 0 20px 20px 0;
+}
+
+.blue {
+  background-color: $blue-background;
+}
+.green {
+  background-color: $green-background;
+}
+.orange {
+  background-color: $red-background;
+}
+
+ .label-header {
+  display: flex;
+  align-items: center;
+  height: 69px;
+  padding: 0 15px 0 15px;
+  border-radius: 5px;
+}
+
+ .label-input {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  color: $secondary-text;
+  &::placeholder {
+    font-size: $font-md;
+    color: $secondary-text;
+  }
+}
+
+ .label-btn {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  background-image: url('../pictures/icons/expand_more.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+#filter-ingredients[data-open="false"]+#details-first,
+#filter-appareils[data-open="false"]+#details-second,
+#filter-ustensils[data-open ="false"]+#details-third
+{
+ display:none; 
+  }
+
+#filter-ingredients[data-open="true"] #ingrédient::placeholder,
+#filter-ustensils[data-open ="true"] #ustensil::placeholder
+{
+  color: darken($secondary-text, 20%);
+  } 
+
+  #filter-appareils[data-open ="true"] #appareil::placeholder
+  {
+    color: white;
+  }
+#filter-ingredients[data-open="true"]  #btn-ingredient,
+#filter-appareils[data-open ="true"] #btn-appareil,
+#filter-ustensils[data-open ="true"] #btn-ustensil{
+  background-image: url('../pictures/icons/expand_less.svg');
+} 
+
+.label-content {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  grid-template-columns: 240px;
+  grid-auto-flow: column;
+  grid-auto-columns: 240px;
+  overflow-x: auto;
+  padding: 0 15px 15px 15px;
+  margin-top: -3px;
+  border-radius: 0 0 5px 5px;
+  min-height: 0px;
+}
+
+.label-content::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: $primary-background-card;
+}
+
+.label-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: $primary-background-card;
+}
+.label-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: darken($primary-background-card, 30%);
+}
+li {
+  color: $secondary-text;
+  margin: 5px 0 5px 0;
+  cursor: pointer;
+}
+

@@ -1,0 +1,40 @@
+/**
+* _page-home.scss 1.0 juillet 2021 by Alexandre CHARLIER  
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier__19072021.
+* GitHub Pages : https://alexandre34000.github.io/AlexandreCharlier_7_19072021
+* Theme Name : Les petits plats .
+* Date: juillet 2021. 
+* Description : StyleSheet de la page index.
+*/
+
+#content-main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    min-height:200px;
+    margin: 0 20px;
+    @include tablette-only{
+        margin: 0 100px; 
+    } 
+}
+.msg-error{
+    margin-top:80px;
+    height: 100px;
+    font-size :$font-big;
+    font-weight: 900;
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         5s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-delay: 3s;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+    -webkit-transform: rotate3d(0,1,0,0deg);
+    }
+    100% { 
+    -webkit-transform: rotate3d(0,1,0,360deg);
+    -webkit-animation-timing-function: ease-in-out;
+    }
+}

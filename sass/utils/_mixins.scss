@@ -1,0 +1,40 @@
+/**
+* mixins.scss 1.0 avril 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier__19072021.
+* GitHub Pages : https://alexandre34000.github.io/AlexandreCharlier_7_19072021
+* Theme Name : Les petits plats .
+* Date: juillet 2021. 
+* Description : Déclaration des mixins. 
+*/
+
+/*-- Media query-- */
+@mixin htmlMin {
+  @media screen and (min-width: map-get($breakpoints , htmlMin)) {
+    @content;
+  }
+}
+@mixin mobileIp {
+  @media screen and (min-width: map-get($breakpoints , mobileIp)) {
+    @content;
+  }
+}
+@mixin mobile-landscape{
+  @media screen and(min-width: map-get($breakpoints, mobile-landscape)) {
+    @content;
+  }
+}
+
+@mixin tablette-only {
+  @media screen and(min-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints , desktop)) {
+    @content;
+  }
+}
+

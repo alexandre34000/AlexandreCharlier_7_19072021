@@ -1,0 +1,50 @@
+/**
+* variables.scss 1.0 juillet 2021 by Alexandre CHARLIER  
+*
+* Author : Alexandre CHARLIER.
+* GitHub : https://github.com/alexandre34000/AlexandreCharlier__19072021.
+* GitHub Pages : https://alexandre34000.github.io/AlexandreCharlier_7_19072021
+* Theme Name : Les petits plats .
+* Date: juillet 2021. 
+* Description : Déclaration des variables.
+*/
+
+/*--color--*/
+$primary-background:#E5E5E5;
+$secondary-background:#E7E7E7;
+$primary-background-card:#E7E7E7;
+$secondary-background-card:#C7BEBE;
+$blue-background:#3282F7;
+$green-background:#68D9A4;
+$red-background:#ED6454;
+
+/*--color-texte--*/
+$primary-text:#000000;
+$secondary-text: #FFFFFF;
+
+/*--font--*/
+$font-exsm: 1.2rem;
+$font-sm: 1.4rem;
+$font-md: 1.8rem;
+$font-lg: 2.3rem;
+$font-exlg: 2.5rem;
+$font-big: 3rem;
+
+
+/*--font-familly--*/
+$font-recette :'Roboto';
+$font-texte :'Lato';
+
+
+/*--media query--*/
+$breakpoints:(
+    mobile: 320px,
+    mobile-landscape: 576px,
+    tablette: 768px,
+    desktop: 1199px,
+    mobileIp: 420px,
+    htmlMin: 360px
+);
+
+
+
